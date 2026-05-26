@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Home Solar Project - Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* --- Google Sites Base Styling Reset --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: #3c4043;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        /* --- Navigation Bar --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #ffffff;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        .logo-container {
+            font-size: 20px;
+            font-weight: 500;
+            color: #202124;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            color: #f9ab00; /* Solar Yellow */
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #5f6368;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 6px 0;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover, nav ul li a.active {
+            color: #1a73e8; /* Google Blue */
+            border-bottom: 2px solid #1a73e8;
+        }
+
+        /* --- Main Content Container --- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+ 
+
+        /* --- Footer --- */
+        footer {
+            background-color: #f8f9fa;
+            border-top: 1px solid #dadce0;
+            text-align: center;
+            padding: 30px 20px;
+            font-size: 13px;
+            color: #70757a;
+        }
+
+        /* --- Responsive Tweaks --- */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+                padding: 15px 20px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+            .split-section, .split-section.reverse {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <span class="logo-icon">☀️</span> My Home Solar Project
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/index.html" >Home</a></li>
+      <!--      <li><a href="#" >System Design</a></li>  -->
+                <li><a href="#" class="active">Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+
+   
+
+    <main class="container">
+        
+       <iframe title="myPowerBI project" width="800" height="836" src="https://app.powerbi.com/view?r=eyJrIjoiODQ4YjY2MGMtYzQxOS00ZmY1LTlkY2QtZjBiOTQ0YWIwNjI0IiwidCI6IjI3N2E1NDcwLWMzYzAtNDdmNS04YzBmLTFhN2UyN2ExZTQ4MiJ9&pageName=999f6b64f3a5575f12f0" frameborder="0" allowFullScreen="true"></iframe>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 My Home Solar Project • Built for test.</p>
+    </footer>
+
+</body>
+</html>
